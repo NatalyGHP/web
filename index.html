@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+
+    <link rel="stylesheet" href="my.css">
+    <title>Nataly Hernández || Marca Personal</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Nataly  <span>Hernández</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Inicio</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">Acerca de mi</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Proyectos</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Formación</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contacto</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Inicio</a>
+                <a href="#">Acerca de mi</a>
+                <a href="#">Proyectos</a>
+                <a href="#">Formación</a>
+                <a href="#">Contacto</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="Jessica.png" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hola, Soy <span>Nataly Hernández</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">Soy <span class="typewriter-text"></span></div>
+                <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1100">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quasi commodi quia rerum, iste corporis expedita in excepturi nesciunt repellendus quisquam amet provident ad mollitia debitis odit voluptatem necessitatibus tempora.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/natalyhzp24" target="_blank "data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button>Hire me</button>
+                </div>
+            </div>
+        </div>
+    </section><br><br><br>
+    <!-- Sección de Logros Académicos -->
+    <section id="logros-academicos">
+        <h2>Mis Logros Académicos</h2>
+        <div class="galeria">
+            <div class="item">
+                <img src="medical.png" alt="Logro Académico 1">
+                <div class="caption">Descripción breve del logro académico.</div>
+            </div>
+            <div class="item">
+                <img src="med.png" alt="Logro Académico 2">
+                <div class="caption"></div>Descripción breve del logro académico.
+            </div>
+            <!-- Añade más logros aquí -->
+        </div>
+    </section>
+
+    <!-- Sección de Voluntariados -->
+    <section id="voluntariados">
+        <h2>Voluntariados</h2>
+        <div class="galeria">
+            <div class="voluntariado">
+                <img src="voluntariado1.jpg" alt="Voluntariado 1">
+                <p>Descripción breve del voluntariado.</p>
+            </div>
+            <div class="voluntariado">
+                <img src="voluntariado2.jpg" alt="Voluntariado 2">
+                <p>Descripción breve del voluntariado.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="galeria">
+            <div class="proyecto">
+                <img src="proyecto1.jpg" alt="Proyecto 1">
+                <p>Descripción breve del proyecto.</p>
+            </div>
+            <!-- Más proyectos aquí -->
+        </div>
+    </section>
+     <!-- Sección de Formación -->
+     <section id="formacion">
+        <h2>Formación</h2>
+        <div class="galeria">
+            <div class="curso">
+                <img src="curso1.jpg" alt="Curso 1">
+                <p>Curso en línea: Descripción breve.</p>
+            </div>
+            <div id="mapa">
+                <h3>¿Dónde estudié?</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=DireccionDeTuInstitucion" width="600" height="450"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="send_email.php" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+      AOS.init({offset:0});
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
